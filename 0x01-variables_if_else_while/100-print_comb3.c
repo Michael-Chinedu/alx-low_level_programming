@@ -10,15 +10,16 @@ int main(void)
 
 	for (n = 48; n <= 56; n++)
 	{
-		if ( m > n)
+		for (m = 49; m <= 57; m++)
 		{
-
-			putchar(n);
-			putchar(m);
-			if (n != 56 || m != 57)
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+				}	putchar(' ');
 			}
 		}
 	}
