@@ -43,6 +43,7 @@ int main(void)
     if  (buffer == NULL)
     {
         printf("failed to allocate memory\n");
-        return (1);
     }
-}
+ 
+        return (1);
+ }
