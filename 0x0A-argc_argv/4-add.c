@@ -14,7 +14,6 @@
 		unsigned int count;
 		count = 0;
 
-
 		while (count < strlen(str)) /*count string*/
 		{
 			if (!isdigit(str[count])) /*check if str there are digit*/
