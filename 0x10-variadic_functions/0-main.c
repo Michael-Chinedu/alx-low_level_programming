@@ -6,6 +6,11 @@
  *
  * Return: Always 0.
  */
+
+int sum_them_all(int a, int b, int c)
+{
+	return(a + b + c);
+}
 int main(void)
 {
     int sum;
