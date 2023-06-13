@@ -37,10 +37,9 @@ void simple_print_buffer(char *buffer, unsigned int size)
  */
 int main(void)
 {
-    char a = 'H';
-    char *buffer = &a;
+    char *buffer;
 
-     simple_print_buffer(buffer, 98);
+    buffer = create_array(98, 'H');
     if  (buffer == NULL)
     {
         printf("failed to allocate memory\n");
@@ -50,5 +49,3 @@ int main(void)
     free(buffer);
     return (0);
 }
-
-
