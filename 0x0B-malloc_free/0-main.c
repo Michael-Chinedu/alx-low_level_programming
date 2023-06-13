@@ -9,7 +9,7 @@
  *
  * Return: Nothing.
  */
-void simple_print_buffer(char *buffer, unsigned int size)
+char *create_array(unsigned int size, char c)
 {
     unsigned int i;
 
@@ -37,10 +37,10 @@ void simple_print_buffer(char *buffer, unsigned int size)
  */
 int main(void)
 {
-     char me = 'c';
-    char *buffer = &me;
+     char me;
+    char *buffer;
 
-     simple_print_buffer(buffer, 98);
+    me =  create_array(98, buffer);
     if  (buffer == NULL)
     {
         printf("failed to allocate memory\n");
